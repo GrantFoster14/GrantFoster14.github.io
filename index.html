@@ -13,11 +13,11 @@
         }
 
 	h1, h2 {
-    		font-family: 'Verdana', sans-serif;  /* Secondary font for headings */
+    		font-family: 'Verdana', sans-serif;
 	}
 
 	p {
-  	  	font-family: 'Arial', sans-serif;    /* Keep Arial for paragraphs */
+  	  	font-family: 'Arial', sans-serif;
 	}
 
         img {
@@ -30,6 +30,28 @@
             width: 40px;
             margin: 10px;
         }
+
+	.card {
+    		display: inline-block;
+   	 	background: rgba(255, 255, 255, 0.9);
+    		padding: 15px;
+    		border-radius: 20px;
+    		box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    		transition: transform 0.3s, box-shadow 0.3s;
+    		margin: 20px auto;
+	}
+
+	.card:hover {
+	    	transform: translateY(-5px);
+  	  	box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+	}
+
+
+	img.headshot {
+    		width: 250px;
+    		border-radius: 50%;
+    		display: block;
+	}
     </style>
 
 </head>
@@ -42,7 +64,9 @@
 Hi! I'm Grant Foster, an Engineering and Economics student at Claremont McKenna College and a proud member of the CMS football team. I love exploring the outdoors, seeking new adventures, and learning new skills along the way. When I'm not studying or on the field, I enjoy discovering new experiences and connecting with people who share my curiosity and passion for growth.
 </p>
 
-<img src="IMG_2861.JPG" alt="Headshot">
+<div class="card">
+    <img class="headshot" src="IMG_2861.JPG" alt="Headshot">
+</div>
 
 <h2>Contacts</h2>
 
